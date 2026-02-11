@@ -170,3 +170,20 @@ h2 {
     background-attachment: scroll;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    padding: 40px 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
