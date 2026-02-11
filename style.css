@@ -165,8 +165,8 @@ h2 {
 
 @media (max-width: 600px) {
   body {
-    background-size: contain;
-    background-position: top center;
-    background-color: #fff;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: scroll;
   }
 }
