@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chá de Casa Nova - Gabriel & Sabrina</title>
+
+  <!-- Fontes Pinterest vibes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="leaves"></div>
+
+<!-- Música de fundo opcional -->
+<audio autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <h1>Chá de Casa Nova</h1>
+  <h2>Gabriel <span>&</span> Sabrina</h2>
+
+  <p class="intro">
+    Estamos começando uma nova fase, cheia de sonhos, amor e um lar para construir juntos.  
+    Queremos dividir esse momento especial com você 🤍
+  </p>
+
+  <div class="info-box">
+    <p><strong>📍 Endereço:</strong> Estrada Belford Roxo, 0, Quadra 01, Lote 02 Jardim Redentor, Belford Roxo</p>
+    <p><strong>🗓 Data:</strong> DD de M de 2026</p>
+    <p><strong>⏰ Horário:</strong> 00h</p>
+  </div>
+
+  <h3>Paleta de Cores</h3>
+  <div class="colors">
+    <span class="color white"></span>
+    <span class="color black"></span>
+    <span class="color gray"></span>
+  </div>
+
+  <div class="buttons">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdke95oPItAF9hWU7apdvUInSK1hgrgzMH8tLWBp4YCvjYX9w/viewform?usp=sharing&ouid=103537833890143326354" class="btn">Confirmar Presença</a>
+    <a href="https://maps.app.goo.gl/Mu7q8sf6nHBPrTpr8" class="btn">Como Chegar</a>
+    <a href="LINK_DA_LISTA" class="btn">Lista de Presentes</a>
+    <button class="btn pix-btn" onclick="openPix()">Enviar PIX</button>
+  </div>
+
+  <!-- Modal PIX -->
+   <div id="pixModal" class="modal">
+   <div class="modal-content">
+    <span onclick="closePix()" class="close">×</span>
+    <h3>Nosso PIX</h3>
+    <img src="pix.png" alt="QR Code PIX">
+    <p>Chave: (21) 98391-0841</p>
+   </div>
+   </div>
+
+    <div class="obs">
+        <p>Confirme sua presença até <strong>15/08/2026</strong>.</p>
+        <p>Não serão servidas bebidas alcoólicas, mas sinta-se à vontade para levar a sua 🍷</p>
+    </div>
+
+    <!-- Selo C&S -->
+    <div class="seal">
+        <img src="selo.png" alt="Selo G&S">
+    </div>
+</div>
+
+<script>
+function playMusic() {
+  document.getElementById("bgMusic").play();
+}
+
+function openPix() {
+  document.getElementById("pixModal").style.display = "flex";
+}
+
+function closePix() {
+  document.getElementById("pixModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

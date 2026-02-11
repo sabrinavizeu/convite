@@ -1,0 +1,172 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('fundo 2.png') no-repeat center center fixed;
+  background-size: contain;
+  background-color: #ffffff;
+
+}
+
+/* Folhas animadas */
+.leaves::before {
+  content:"";
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: url('fundo 2.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.03;
+  animation: float 30s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-200px); }
+}
+
+/* Caixa */
+.container {
+  max-width: 420px;
+  margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* Botão música */
+.music-btn {
+  background: none;
+  border: 1px solid black;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Títulos */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+}
+
+/* Texto */
+.intro {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* Info */
+.info-box {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* Paleta */
+.colors {
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:10px 0;
+}
+
+.color {
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  border:1px solid #ccc;
+}
+
+.white {background:#fff;}
+.black {background:#000;}
+.gray {background:#bbb;}
+
+/* Botões */
+.buttons {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top:20px;
+}
+
+.btn {
+  background:black;
+  color:white;
+  padding:12px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:13px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Observações */
+.obs {
+  font-size:12px;
+  margin-top:15px;
+}
+
+/* Selo */
+.seal {
+  position: relative;
+  bottom: -75px; /* empurra para fora da caixa */
+  left: 50%;
+  margin-top: -100px;
+  transform: translateX(-50%);
+  width: 120px; /* menor e elegante */
+  opacity: 0.95;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.seal img {
+  width: 100%;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
+}
+
+/* Modal PIX */
+.modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  justify-content:center;
+  align-items:center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  width:80%;
+}
+
+.modal img {
+  width:200px;
+  margin:10px 0;
+}
+
+.close {
+  font-size:20px;
+  cursor:pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+    background-position: top center;
+    background-color: #fff;
+  }
+}
