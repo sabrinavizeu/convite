@@ -2,30 +2,29 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('fundo.png') no-repeat center center fixed;
-  background-size: cover;
-  background-position: center top;
+  background: url('fundo2.png') no-repeat center center;
+  background-size: contain;
   background-attachment: scroll;
   background-color: #ffffff;
+
+  min-height: 100vh;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  padding-top: 40px;
+  align-items: flex-start; 
 }
 
 /* Caixa */
 .container {
   max-width: 420px;
-  margin: 0;
+  width: 90%;
   text-align: center;
-  padding: 60px 20px;
-  background: rgba(255,255,255,0.75);
-  backdrop-filter: blur(4px);
-  border-radius: 20px;
-  margin-bottom: 40px;
-  position: relative;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  padding: 50px 22px;
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(6px);
+  border-radius: 22px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.15);
+  margin-top: 20px;
 }
 
 /* Botão música */
@@ -153,21 +152,13 @@ h2 {
 
 @media (max-width: 600px) {
   body {
-    background-size: cover;
-    background-position: center top;
-    background-attachment: scroll;
+    background-size: contain; /* NÃO CORTA */
+    padding: 20px 0; /* flores visíveis */
   }
-}
 
-@media (max-width: 600px) {
   .container {
     max-width: 92%;
-    padding: 30px 18px;
-    border-radius: 18px;
-  }
-
-  h2 {
-    font-size: 32px;
+    padding: 35px 18px;
   }
 }
 
@@ -177,5 +168,3 @@ h2 {
     padding: 14px;
   }
 }
-
-
