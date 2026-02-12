@@ -3,7 +3,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: url('fundo2.png') no-repeat center top;
-  background-size: 100% auto;
+  background-size: contain;
   background-color: #f9f7f4;
 
   min-height: 100vh;
@@ -12,14 +12,14 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center; /* ISSO CENTRALIZA A CAIXA */
+  align-items: center;
   padding: 6vh 4vw;
 }
 
 /* Caixa */
 .container {
   max-width: 520px;
-  width: 92%;
+  width: 100%;
   text-align: center;
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(6px);
@@ -153,7 +153,7 @@ h2 {
 
 @media (max-width: 600px) {
   body {
-    background-size: 100% auto;
+    background-size: contain;
     align-items: flex-start; /* fica mais bonito estilo convite */
     padding: 8vh 4vw;
   }
@@ -172,5 +172,6 @@ h2 {
     padding: 14px;
   }
 }
+
 
 
